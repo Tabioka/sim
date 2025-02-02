@@ -1,22 +1,28 @@
 # 🚀 Advanced Discord Bot - 200+ Commands
 
 ![Discord Bot](https://img.shields.io/badge/Discord-Bot-blue.svg)
-![License](https://img.shields.io/github/license/yourusername/your-bot-repo)
-![Stars](https://img.shields.io/github/stars/yourusername/your-bot-repo?style=social)
-![Issues](https://img.shields.io/github/issues/yourusername/your-bot-repo)
+![License](https://img.shields.io/github/license/Tabioka/your-bot-repo)
+![Stars](https://img.shields.io/github/stars/Tabioka/your-bot-repo?style=social)
+![Issues](https://img.shields.io/github/issues/Tabioka/your-bot-repo)
+![Contributors](https://img.shields.io/github/contributors/Tabioka/your-bot-repo)
+![Build](https://img.shields.io/github/actions/workflow/status/Tabioka/your-bot-repo/ci.yml)
 
-An advanced Discord bot with over 200 commands, including moderation, music, economy, fun, utility, and more!
+An ultra-advanced Discord bot with over 200 commands, featuring AI-powered functionalities, automation, analytics, and seamless integrations with third-party services.
 
 ## 🌟 Features
 
-✅ **Moderation** - Kick, ban, mute, warn, slowmode, and more.
-✅ **Music** - Play songs from YouTube, Spotify, SoundCloud.
-✅ **Economy** - Virtual currency, daily rewards, shop system.
-✅ **Fun** - Memes, trivia, games, random jokes.
-✅ **Utility** - Weather, server stats, user info, reminders.
-✅ **Customizable** - Supports prefixes, custom command responses.
-✅ **Logging** - Tracks message deletions, edits, and user joins.
-✅ **AI-Powered** - Chatbot with OpenAI integration.
+✅ **Moderation** - Kick, ban, mute, warn, slowmode, auto-moderation with AI detection.
+✅ **Music** - Play songs from YouTube, Spotify, SoundCloud, Twitch with advanced filters (bass boost, 8D, nightcore, etc.).
+✅ **Economy** - Virtual currency, daily rewards, shop system, gambling, stock market simulation.
+✅ **Fun** - Memes, trivia, games, random jokes, image generation, AI chat responses.
+✅ **Utility** - Weather, server stats, user info, reminders, translation, webhook support.
+✅ **Customizable** - Supports custom responses, dynamic command creation.
+✅ **Logging** - Tracks message deletions, edits, user joins, moderation actions.
+✅ **AI-Powered** - GPT-based chatbot, AI image generation, sentiment analysis.
+✅ **Automation** - Scheduled announcements, auto-role assignment, customizable workflows.
+✅ **Analytics** - Server insights, user engagement tracking, message statistics.
+✅ **Multi-Language** - Supports multiple languages with auto-detection.
+✅ **Security** - Anti-raid, anti-spam, verification system, permission management.
 
 ---
 
@@ -29,6 +35,8 @@ Ensure you have the following installed:
 - [Discord.js](https://discord.js.org/) (v14+)
 - [MongoDB](https://www.mongodb.com/) (for economy & logging)
 - [FFmpeg](https://ffmpeg.org/) (for music features)
+- [Redis](https://redis.io/) (for caching & performance optimization)
+- [Docker](https://www.docker.com/) (optional for containerized deployment)
 
 ### 2️⃣ Clone the Repository
 ```sh
@@ -50,35 +58,46 @@ cp .env.example .env
 ```sh
 DISCORD_TOKEN=your-bot-token
 MONGO_URI=your-mongodb-uri
-PREFIX=!
+REDIS_URL=your-redis-url
+OPENAI_API_KEY=your-openai-api-key
 ```
 
 ### 5️⃣ Start the Bot
 ```sh
-npm start
+npm run start
+```
+
+For production, run using PM2:
+```sh
+npm install -g pm2
+pm run deploy
 ```
 
 ---
 
 ## 🎮 Commands
 
-Use `!help` to see all available commands. Categories include:
+Use `/help` to see all available commands. Categories include:
 
 | Category   | Commands Count |
 |------------|---------------|
-| Moderation | 20+ |
-| Fun        | 50+ |
-| Utility    | 30+ |
-| Music      | 25+ |
-| Economy    | 40+ |
-| AI & Chat  | 10+ |
+| Moderation | 30+ |
+| Fun        | 60+ |
+| Utility    | 40+ |
+| Music      | 30+ |
+| Economy    | 50+ |
+| AI & Chat  | 20+ |
+| Automation | 10+ |
+| Analytics  | 10+ |
 
 Examples:
 ```sh
-!ban @user Reason
-!play Despacito
-!weather New York
-!balance
+/moderation ban @user Reason
+/music play Despacito --bassboost
+/weather New York --detailed
+/economy balance
+/stock TSLA
+/translate Hello --to=es
 ```
 
 ---
@@ -89,10 +108,13 @@ Examples:
 A: Ensure your `.env` file is correctly set up and all dependencies are installed.
 
 **Q: Commands aren't working!**  
-A: Check if the bot has the correct permissions in the server.
+A: Ensure the bot is registered with slash commands in your Discord server.
 
 **Q: Music isn't playing!**  
 A: Make sure FFmpeg is installed and the bot has access to a voice channel.
+
+**Q: How do I deploy this bot on a server?**  
+A: Use Docker for a streamlined setup or deploy via PM2 for process management.
 
 ---
 
@@ -114,4 +136,6 @@ Pull requests are welcome! For major changes, please open an issue first to disc
 
 ## 📞 Contact
 - GitHub: [@Tabioka](https://github.com/Tabioka)
-- Discord: `tabioka#0000`
+- Discord: `Tabioka#0000`
+
+
