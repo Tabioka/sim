@@ -113,5 +113,5 @@ Pull requests are welcome! For major changes, please open an issue first to disc
 ---
 
 ## 📞 Contact
-- GitHub: [@yourusername](https://github.com/Tabioka)
+- GitHub: [@Tabioka](https://github.com/Tabioka)
 - Discord: `tabioka#0000`
